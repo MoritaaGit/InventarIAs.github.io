@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InventarIAs - El Directorio de IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-contenedor">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <span class="logo-icon">🔮</span>
+                <h2>InventarIAs</h2>
+            </div>
+            
+            <nav id="menu-categorias">
+                <button class="btn-categoria activo" data-categoria="todas">🌌 Explorar Todas</button>
+                <div class="divisor">Categorías</div>
+                <button class="btn-categoria" data-categoria="modelos">💬 Modelos y Chatbots</button>
+                <button class="btn-categoria" data-categoria="visual">🎨 Visual y Audio</button>
+                <button class="btn-categoria" data-categoria="codigo">💻 Programación</button>
+                <button class="btn-categoria" data-categoria="productividad">⚙️ Productividad</button>
+                <button class="btn-categoria" data-categoria="academia">🎓 Academia y Ciencias</button>
+                <button class="btn-categoria" data-categoria="automatizacion">🛠️ Automatización</button>
+                <button class="btn-categoria" data-categoria="educacion">📚 Recursos Educativos</button>
+                <button class="btn-categoria" data-categoria="juegos">🎮 Juegos y Ocio</button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="divisor-footer"></div>
+                <p>© 2026 InventarIAs</p>
+                <p class="propietario">Propietario: <strong>MORITA</strong></p>
+            </div>
+        </aside>
+
+        <main class="contenido-principal">
+            <header class="cabecera">
+                <div class="buscador-wrapper">
+                    <span class="icono-buscar">🔍</span>
+                    <input type="text" id="buscador" placeholder="Busca por nombre, uso o subcategoría (ej. medicina, finanzas, python...)">
+                </div>
+            </header>
+            
+            <div class="resultados-info" id="resultados-info">Mostrando todas las herramientas</div>
+            
+            <div id="contenedor-tarjetas" class="grid-tarjetas">
+                </div>
+        </main>
+    </div>
+
+    <div class="chat-widget">
+        <div class="chat-header" id="chat-toggle">
+            <div class="chat-header-info">
+                <span class="estado-online"></span>
+                <span>Asistente InventarIAs</span>
+            </div>
+            <span class="toggle-icon">💬</span>
+        </div>
+        <div class="chat-cuerpo" id="chat-cuerpo" style="display: none;">
+            <div id="chat-mensajes" class="chat-mensajes">
+                <div class="mensaje bot">¡Hola! Mi base de datos ha crecido enormemente. ¿Buscas IAs para investigación, diseño, automatizar tareas o algo más?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Pregúntame lo que necesites...">
+                <button id="chat-enviar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
